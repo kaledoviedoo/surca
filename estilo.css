@@ -1,0 +1,464 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #2b2b2b;
+    font-size: 16px;
+    color: #fff;
+  }
+  .background-image {
+    background-image: url('haikei.png'); /* replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* set height to 100vh */ /* add min-height to ensure full height coverage */
+    width: 100%;
+    position: absolute; /* add this to position it as a background element */
+    top: 0; /* set top position to 0 */
+    left: 0; /* set left position to 0 */
+    z-index: -1; /* set z-index to -1 to send it to the back */
+  }
+  
+  .content {
+   /* add padding to content */
+    position: relative; /* add this to create a new stacking context */
+  }
+  .navbar {
+    background-color: #080808; /* dark gray background */
+    padding: 10px; /* add some padding */
+    display: flex; /* make the navigation bar horizontal */
+    justify-content: flex-end; /* align items to the right */
+    align-items: center; /* center the items vertically */
+    background-color: rgba(95, 95, 95, 0.5); /* add this line to make the divider 50% transparent */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    box-sizing: border-box;
+    filter: blur(40%);
+  }
+  
+  .navbar ul {
+    list-style: none; /* remove bullet points */
+    margin: 0; /* remove default margin */
+    padding: 0; /* remove default padding */
+    display: flex; /* make the list items horizontal */
+  }
+  
+  .navbar li {
+    margin-right: 40px; /* increase space between items */
+  }
+  
+.navbar a {
+    color: #fff; /* white text color */
+    text-decoration: none; /* remove underline */
+    font-size: 17px;
+    font-family: "Cabin", sans-serif;
+    text-align: center;
+    margin-left: 40px; /* add a gap between the text */
+  }
+  
+.navbar a:hover {
+    color: #ccc; /* light gray text color on hover */
+    transition: 0.2s;
+  }
+
+  .imagencont {
+    display: flex; /* set the display property to flex */
+    justify-content: center; /* center the image horizontally */
+    align-items: center; /* center the image vertically */
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .imagen {
+    max-width: 150px;
+    max-height: 150px;
+    margin-top: 40px;
+  }
+    .nombre {
+    font-size: small;
+    font-family: "Questrial", sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  span{
+    color: #b122b1;
+    text-decoration-thickness: 3px;
+  }
+  .wrapper{
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    font-weight: 600;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+  }
+    .wrapper .titulo{
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.0;
+    color: #ffffff;
+    display: flex;
+    font-family: "Cabin", sans-serif;
+    font-size: 25px;
+}
+.wrapper .trabajo{
+  font-size: 50px;
+  font-family: "Cabin", sans-serif;
+}
+
+.wrapper .trabajo .job{
+  display: flex;
+  color: #ffffff;
+  font-size: 50px;
+  font-family: "Cabin", sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.0;
+  color: #ffffff;
+}
+.start{
+  opacity: 0;
+  font-size: inherit; /* Add this line */
+  font-family: inherit; /* Add this line */
+}
+.animation{
+  animation: animate 0.3s forwards;
+  font-size: inherit; /* Add this line */
+  font-family: inherit; /* Add this line */
+
+}
+@keyframes animate{
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    font-size: inherit; /* Add this line */
+    font-family: inherit; /* Add this line */
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+    font-size: inherit; /* Add this line */
+    font-family: inherit; /* Add this line */
+  }
+
+}
+
+.holder-animation{
+  animation: holder 4s;
+
+}
+
+@keyframes holder {
+  0% {
+    opacity: 1;
+    font-size: inherit; /* Add this line */
+    font-family: inherit; /* Add this line */
+  }
+
+  95%{
+    opacity: 1;
+    font-size: inherit; /* Add this line */
+    font-family: inherit; /* Add this line */
+  }
+
+  100%{
+    opacity: 0;
+    font-size: inherit; /* Add this line */
+    font-family: inherit; /* Add this line */
+  }
+
+}
+.gmail {
+        text-align: center; /* add this to center the button horizontally */
+
+    }
+    #bottone1 {
+        padding-left: 33px;
+        padding-right: 33px;
+        padding-bottom: 16px;
+        padding-top: 16px;
+        border-radius: 9px;
+        background-color: rgba(95, 95, 95, 0.5); /* add this line to make the divider 50% transparent */
+        border: none;
+        font-family: "Cabin", sans-serif;
+        text-emphasis-color: none;
+        text-decoration-style: none;
+        text-decoration: none;
+        color: #ffffff;
+        text-align: center;
+        transition: 0.4s;
+        cursor: pointer;
+        margin-top: 40px; /* add 20px of space between the button and the H1 title */
+      } 
+      
+      #bottone1:hover {
+        box-shadow: 7px 5px 56px -14px #858585;
+      }
+      
+      #bottone1:active {
+        transform: scale(0.97);
+        box-shadow: 7px 5px 56px -10px #858585;
+      }
+      
+      #bottone1:focus {
+        outline: none; /* remove the blue outline */
+        text-decoration: none; /* remove the underline */
+      }
+      .imagen2 {
+        background-color: #23002e; /* replace with your image URL */
+        background-size: cover;
+        background-position: center;
+        height: 100vh; /* set height to 100vh */ /* add min-height to ensure full height coverage */
+        width: 100%;
+        margin-top: 167px;
+        position: absolute; /* add this to position it as a background element */ /* set top position to 0 */ /* set left position to 0 */
+        z-index: -2; /* set z-index to -1 to send it to the back */
+        opacity: 50%;   
+      }
+      .experiencia{
+        font-size: 25px;
+        font-family: "Cabin", sans-serif;
+        text-align: left;
+        margin-bottom: 10px;
+        line-height: 1.0;
+        margin-top: 400px;
+        margin-left: 100px;
+      }
+      .experiencia span {
+        border-bottom: 8px solid #b122b1; /* create a thicker underline */
+        display: inline; /* ensure the underline is only on one line */
+        color: inherit; /* set the text color to the default color */
+    }
+    .subti{
+      font-size: small;
+      font-family: "Questrial", sans-serif;
+      text-align: center;
+      margin-bottom: 10px;
+      text-align: left;
+      margin-left: 5px;
+      margin-top: 20px;
+    }
+    @keyframes slide {
+      from {
+        transform: translateX(0);
+      }
+      to{
+        transform: translateX(-100%);
+      }
+    }
+    .logos {
+      overflow: hidden;
+      padding-top: 30px;
+      margin-right: 90px;
+      white-space: nowrap;
+      position: relative;
+    }
+
+    .logos:hover .logos-slide{
+      animation-play-state: paused;
+    }
+    .logos-slide{
+      display: inline-block;
+      animation: 35s slide infinite linear;
+    }
+    .logos-slide img {
+      height: 40px;
+      margin: 0 8px ;
+    }
+    .me {
+      font-size: 25px;
+      font-family: "Cabin", sans-serif;
+      text-align: center;
+      margin-bottom: 10px;
+      line-height: 1.0;
+      margin-top: 300px;
+      justify-content: center; /* add this to align the text to the right */
+      align-items: center;
+    }
+    .me span{
+      border-bottom: 8px solid #b122b1; /* create a thicker underline */
+        color: inherit; /* set the text color to the default color */
+    }
+    .subt img {
+      width: 15px; /* adjust the image width to your liking */
+      height: 15px; /* adjust the image height to your liking */
+      margin-right: 2px;
+      margin-left: 2px; /* add some space between the image and text */
+      
+    }
+    .subt{
+      font-size: 19.5px;
+      font-family: "Questrial", sans-serif;
+      text-align: center;
+      margin-bottom: 10px;
+      margin-top: 30px;
+      line-height: 1.0;
+    }
+    .container{
+      width: 100%;
+      padding: 35px 10%;
+      margin-left: 10px;
+      
+    }
+    .container{
+      padding-right: calc(10% - 30px);
+    }
+    div.row{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 20px;
+      margin-top: 70px;
+    }
+    .col header.title{
+      font-family: "Cabin", sans-serif;
+      color: #ffffff;
+      padding: 0px 0px 20px 30px;
+    }
+    .col .contents{
+      padding: 0px 30px;
+      border-left: 2px solid #bababa;
+      margin-left: 10px;
+    }
+    .col .contents .box{
+      position: relative;
+      padding: 20px;
+      border: 1px solid #eaeaea;
+      background-color: #ffffff;
+      cursor: pointer;
+      transition: all 0.4s;
+      margin-bottom: 20px;
+    }
+    .col .contents .box:hover{
+      box-shadow: 0px 3px 12px 0px #ccc;
+      border: 1px solid transparent;
+    }
+    .col .contents .box::before{
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      right: calc(100% + 22px);
+      top: 0;
+      background-color: #b122b1;
+      border: 2px solid white;
+    }
+    .box h4{
+      position: relative;
+      color: #b122b1;
+      font-family: "Cabin", sans-serif;
+    }
+    .box h3{
+      font-size: 19px;
+      padding: 10px 0px 6px;
+      font-family: "Questrial", sans-serif;
+      color: #444;
+    }
+    .box p{
+      line-height: 1.2;
+      font-family: "Questrial", sans-serif;
+      color: #666;
+      font-size: 17px;
+    }
+    @media(max-width: 768px){
+      main.row{
+        grid-template-columns: 1fr;
+      }
+      .row .col:nth-child(2){
+        margin-top: 30px;
+      }
+    }
+    .campus h1 {
+      font-size: 25px;
+      font-family: "Cabin", sans-serif;
+      text-align: center;
+      margin-bottom: 10px;
+      line-height: 1.0;
+      margin-top: 300px;
+      justify-content: center;
+    }
+    .campus h2 {
+      line-height: 1.2;
+      font-family: "Questrial", sans-serif;
+      color: #666;
+      font-size: 17px;
+      margin-bottom: 60px;
+      text-align: center;
+      justify-content: center;
+    }
+    /* From Uiverse.io by Sharkotech */ 
+.card {
+  width: 190px;
+  height: 254px;
+  background: rgba(211, 211, 211, 0.199);
+  position: absolute;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#c1 {
+  background-color: black;
+}
+
+#c2 {
+  background-color: blue;
+}
+
+#c3 {
+  background-color: red;
+}
+
+#c4 {
+  background-color: green;
+}
+
+.main:hover #c1 {
+  transform: translateX(-100px) rotate(-40deg);
+}
+
+.main:hover #c2 {
+  transform: translateX(-50px) rotate(-30deg);
+}
+
+.main:hover #c3 {
+  transform: translateX(0) rotate(-20deg);
+}
+
+.main:hover #c4 {
+  transform: translateX(50px) rotate(-10deg);
+}
+
+#c1:hover {
+  transform: translateX(-150px) rotate(0deg) !important;
+}
+
+#c2:hover {
+  transform: translateX(-100px) rotate(0deg) !important;
+}
+
+#c3:hover {
+  transform: translateX(-50px) rotate(0deg) !important;
+}
+
+#c4:hover {
+  transform: translateX(50px) rotate(0deg) !important;
+}
+
+.main {
+  display: grid;
+  height: 50vmax;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+}
